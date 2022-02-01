@@ -1,0 +1,111 @@
+<!--Author:Alicja Szwalek
+    COM1008 Assignment 1-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Alicja Szwalek" />
+
+    <title>Rivia</title>
+
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/rivia.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+        
+    <!-- Start of header  -->
+
+    <header>
+        <!--Adobe Spark-->
+        <a id="logo" href="index.html">
+            <img id="img" src="./images/logo.png" alt="logo"/>
+        </a>
+        <nav>
+            <select onChange="location = this.value;" id="dropdownmenu">
+                <!--drop-down menu-->
+                <option value="contactus.html" selected disabled hidden>Contact us</option>
+                <option value="index.html" >Home</option>
+                <option value="aboutus.html">About us</option>
+                <option value="news.html">News</option>
+                <option value="game.html">Game</option>
+                <option value="accessibility.html">Accessibility</option>
+            </select>
+            <ul id="desktopmenu">
+                <!--desktop menu-->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="game.html">Game</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <!-- End of header  -->
+
+
+    <!-- Start of main -->
+
+
+    <main>
+        <h1>CONTACT US</h1>
+        <div class="contact">
+            <h3> CONTACT</h3>
+            <p> Media: rivia@gmail.com </p>
+            <p> Legal issues: spam.rivia@gmail.com </p>
+            <p> Business inquires: biz.rivia@gmail.com</p>
+            <h3>HEADQUARTERS</h3>
+            <p>RIVIA<br>Strzyglowska 200a<br>02-857 Warszawa<br>POLAND</p>
+            <H3>OTHER LOCATIONS</H3>
+            <p>140 West Street<br>S5 4GT Sheffield<br>ENGLAND</p>
+            <P>2 Ritan Rd<br>100600 Beijing<br>CHINA</P>
+        </div>
+
+        <form name="comments" action="https://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.php" method="POST">
+            <input type="hidden" name="recipients" value="aszwalek1@sheffield.ac.uk">
+            <div class="wrapper">
+                <div class="contactus-input">
+                    <div class="contactus-inf">
+                        <p>WRITE A COMMENT</p>
+                        <p>
+                            <label for="from">Name: </label>
+                            <input type="text" name="realname" class="input" placeholder="Type your name..." required>
+                        </p>
+                        <p>
+                            <label for="email">Email: </label>
+                            <input type="text" name="email" class="input" placeholder="Type your email..." required>
+                        </p>
+                    </div>
+                    <div class="contactus-msg">
+                        <label for="comment">Comment: </label>
+                        <textarea name="comment" placeholder="Type your comment..." required></textarea>
+                    </div>
+                    <div class="button">
+                        <input type="submit" name="Submit" value="Send">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <p class="fake">Page contains fictitious information</p>
+    </main>
+    
+    
+    <!-- End of main  -->
+
+    <!-- Start of Footer -->
+
+
+    <footer>
+        <p>Copyright &copy; 2021 Rivia. All rights reserved.</p>
+    </footer>
+
+    <!-- End of Footer -->
+</body>
+
+</html>
